@@ -52,6 +52,56 @@
                 </div>
             </section>
         </section>
+        <section id="results">
+            <section id="meta-data" class="wrapper">
+                <div class="taps">
+                    <div class="tap" id="meta-table">
+                        <!-- META DATA (TABLE)-->
+                        <input type="radio" name="tabs-metadata" id="tab-metadata-table" class="tab-switch" checked>
+                        <label for="tab-metadata-table" class="tab-label">Meta Data Summery</label>
+
+                        <h3>Meta Tags</h3>
+                        <div class="tap-content">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>ScriptGuard</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Version</td>
+                                        <td>0.1.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Description</td>
+                                        <td>ScriptGuard is a tool to scan userscripts for malicious code.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Author</td>
+                                        <td>black-backdoor</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tap" id="meta-code">
+                        <!-- META DATA (CODE) -->
+                        <input type="radio" name="tabs-metadata" id="tab-metadata-raw" class="tab-switch">
+                        <label for="tab-metadata-raw" class="tab-label">Code</label>
+                        
+                        <h3>Meta Header</h3>
+                        <div class="tap-content">
+                            <code id="meta-code-input" class="language-javascript"></code>
+                        </div>
+                </div>
+            </section>
+        </section>
     </main>
 
     <footer>

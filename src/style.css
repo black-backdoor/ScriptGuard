@@ -1,0 +1,55 @@
+html,
+body {
+    margin: 0;
+}
+
+
+:root {
+    --header-background: #fff;
+    --header-link-color: black;
+    --logo-color: #000;
+}
+
+header {
+    background-color: var(--header-background);
+}
+
+#name {
+    color: black;
+}
+
+#name a {
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: var(--logo-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 65px;
+    box-shadow: 0 0 0 0 #00000000, 0 0 0 0 #00000000, 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--header-link-color);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

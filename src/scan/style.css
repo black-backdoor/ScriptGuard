@@ -59,9 +59,28 @@ header nav a:hover {
 }
 
 
+/* ############### MAIN ############### */
+main {
+    margin: 0 auto;
+    max-width: 1024px;
+    min-width: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
 /* ############### INPUT ############### */
 /* FILE UPLOAD or TEXT INPUT */
 
+#input {
+    /* CHANGE TO DISPLAY: NONE TO HIDE */
+    display: block;
+}
+
+#input #text textarea {
+    width: 100%;
+    height: 10rem;
+}
 
 
 /* ############### FOOTER ############### */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scan - ScriptGuard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/assets/favicon.svg">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div id="name">
+                <a href="/">ScriptGuard</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://github.com/black-backdoor/ScriptGuard">GitHub</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="input">
+            <h1>Scan your userscript</h1>
+            <section class="taps">
+                <div class="tap" id="text">
+                    <h3>Paste your Code</h3>
+                    <textarea id="text-input" placeholder="Paste your userscript here"></textarea>
+                </div>
+                <div class="tap" id="file-upload">
+                    <h3>Select a File</h3>
+                    <input type="file" id="file-input" accept=".user.js">
+                </div>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <a href="/" id="footer-logo">ScriptGuard</a>
+    </footer>
+</body>
+</html>

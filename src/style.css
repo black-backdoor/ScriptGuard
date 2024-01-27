@@ -72,6 +72,11 @@ main {
     padding-right: 1rem;
 }
 
+#head {
+    margin-top: 5rem;
+    text-align: center;
+}
+
 
 /* TITLE */
 #head h1 {
@@ -89,7 +94,7 @@ main {
     margin-bottom: 1rem;
 }
 
-
+/* REMOVE LATER */
 #head img {
     width: 10%;
 }

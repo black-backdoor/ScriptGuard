@@ -174,3 +174,21 @@ main {
         display: flex
     }
 }
+
+
+/* ############### CONTRIBUTION ############### */
+
+#contribution {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* LIST */
+#contribution ul {
+    list-style: square;
+}
+
+/* LIST ELEMENT */
+#contribution li {
+    margin-bottom: 1rem;
+}

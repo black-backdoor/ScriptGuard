@@ -28,18 +28,32 @@
         <section id="input">
             <h1>Scan your userscript</h1>
             <section class="taps">
-                <div class="tap" id="text">
-                    <h3>Paste your Code</h3>
-                    <textarea id="text-input" placeholder="Paste your userscript here"></textarea>
+                <div class="tab" id="text">
+                    <!-- CODE INPUT (TEXT)-->
+                    <input type="radio" name="css-tabs" id="tab-1" class="tab-switch" checked>
+                    <label for="tab-1" class="tab-label">Text</label>
+
+                    <p>TEXT</p>
+                    <div class="tab-content">
+                        <h3>Paste your Code</h3>
+                        <textarea id="text-input" placeholder="Paste your userscript here"></textarea>
+                    </div>
                 </div>
-                <div class="tap" id="file-upload">
-                    <h3>Select a File</h3>
-                    <input type="file" id="file-input" accept=".user.js">
+                <div class="tab" id="file-upload">
+                    <!-- CODE INPUT (FILE)-->
+                    <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+                    <label for="tab-2" class="tab-label">File</label>
+
+                    <h3>File Upload</h3>
+                    <div class="tab-content">
+                        <h3>Select a File</h3>
+                        <input type="file" id="file-input" accept=".user.js">
+                    </div>
                 </div>
             </section>
         </section>
     </main>
-    
+
     <footer>
         <a href="/" id="footer-logo">ScriptGuard</a>
     </footer>

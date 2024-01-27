@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 
-
+/* ############### HEADER ############### */
 :root {
     --header-background: #fff;
     --header-link-color: black;
@@ -53,3 +53,78 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+
+
+/* ############### TITLE ############### */
+
+:root {
+    --title-text-color: #333333;
+    --subtitle-text-color: #4b5563;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    min-width: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/* TITLE */
+#head h1 {
+    color: var(--title-text-color);
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* SUBTITLE */
+#head h3 {
+    color: var(--subtitle-text-color);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+#head img {
+    width: 10%;
+}
+
+
+/* ############### HOME-BUTTONS ############### */
+#home-buttons {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#home-buttons a {
+    border-radius: 9999px;
+    border-width: 1px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: .5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    padding: .75rem 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#home-buttons .primary {
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+#home-buttons .secondary {
+    background-color: #e5e7eb;
+    color: #4b5563;
+}
+
+
+
+
+

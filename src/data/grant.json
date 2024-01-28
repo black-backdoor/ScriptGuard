@@ -1,0 +1,25 @@
+{
+    "source": "https://violentmonkey.github.io/api/gm/",
+    "permissions": [
+        {
+            "name": "GM_info",
+            "discription": "An object that exposes information about the current userscript."
+        },
+        {
+            "name": "GM_getValue",
+            "discription": "Retrieves a value for current script from storage."    
+        },
+        {
+            "name": "GM_setValue",
+            "discription": "Sets a key / value pair for current script to storage."
+        },
+        {
+            "name": "GM_deleteValue",
+            "discription": "Deletes a key / value pair from storage."
+        },
+        {
+            "name": "GM_listValues",
+            "discription": "Lists all keys of stored key / value pairs."
+        }
+    ]
+}

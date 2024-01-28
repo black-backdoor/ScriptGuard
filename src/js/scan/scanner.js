@@ -17,6 +17,10 @@ function main(code) {
     displayMetaBlock(metaDataBlock);
     displayMetaData(metaObject);
     displayUpdateLinks(metaObject);
+
+
+    displayAntifeatures(metaObject.antifeature);
+    console.log("metaObject", metaObject);
 }
 
 

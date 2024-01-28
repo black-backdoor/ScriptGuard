@@ -1,0 +1,70 @@
+function main(code) {
+    if(typeof code != "string") {
+        throw Error ("Code is not a String", typeof code);
+    }
+
+    console.debug("CODE:", code);
+    
+    // extract & parse the metadata
+    const metaDataBlock = extractUserScriptMetaDataBlock(code);
+    const metaObject = parseMetaDataBlock(metaDataBlock);
+
+    if(metaDataBlock == null) {
+        throw Error("The Script provided may not be valid");
+    }
+
+    // DISPLAY metadata
+    displayMetaBlock(metaDataBlock);
+    displayMetaData(metaObject);
+    displayUpdateLinks(metaObject);
+}
+
+
+
+// ------------------------ METAINFO ------------------------
+
+function displayMetaData(metaObject) {
+    // display the metadata (certian parts)
+    const scriptName = metaObject?.name[0];
+    const scriptVersion = metaObject?.version[0];
+    const scriptDescription = metaObject?.description[0];
+    const scriptAuthor = metaObject?.author[0];
+    const updateURL = metaObject?.updateURL[0] || metaObject?.downloadURL[0];
+    
+    document.getElementById("script-name").textContent = scriptName;
+    document.getElementById("script-version").textContent = scriptVersion;
+    document.getElementById("script-description").textContent = scriptDescription;
+    document.getElementById("script-author").textContent = scriptAuthor;
+    document.getElementById("script-updateURL").textContent = updateURL;
+
+}
+
+function displayMetaBlock(metaDataBlock) {
+    // display the metadata (the complete block)
+    const codeObject = document.getElementById("metaDataBlock-code");
+    codeObject.innerText = metaDataBlock;
+}
+
+
+function displayUpdateLinks(metaObject) {
+    const links = document.getElementById("updatelink");
+
+    // remove items in list
+    links.innerHTML = "";
+
+
+    var updateURLs = metaObject.updateURL;
+    var downloadURLs = metaObject.downloadURL;
+    var URLS =  updateURLs.concat(downloadURLs);
+
+    URLS.forEach(URL => {
+        // create element
+        var newItem = document.createElement("li");
+
+        // set elment content
+        newItem.textContent = URL;
+
+        // add element
+        links.appendChild(newItem);
+    });    
+}

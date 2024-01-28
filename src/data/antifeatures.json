@@ -1,0 +1,35 @@
+{
+    "source": "https://greasyfork.org/en/help/antifeatures",
+    "features": [
+        {
+            "metakey-name": "ads",
+            "name": "Ads",
+            "discription": "The script inserts advertisements on pages the user visits."
+        },
+        {
+            "metakey-name": "memberships",
+            "name": "Memberships",
+            "discription": "The script requires the user to subscribe to a channel, join a group, like a page, etc. for the script to be fully functional."
+        },
+        {
+            "metakey-name": "miner",
+            "name": "Miner",
+            "discription": "The script contains a cryptominer or other code that uses the user's resources to perform some task for the script author."
+        },
+        {
+            "metakey-name": "payment",
+            "name": "Payment",
+            "discription": "The script requires the user pay the script author for the script to be fully functional."
+        },
+        {
+            "metakey-name": "referral-link",
+            "name": "Referral Link",
+            "discription": "The script performs some action that earns the author commission on purchases. This includes the script containing referral/affiliate links, rewriting existing links to be referral/affiliate links, or providing coupon codes that earn the script author commission."
+        },
+        {
+            "metakey-name": "tracking",
+            "name": "Tracking",
+            "discription": "The script includes code to track user activity. This includes trackers such as Google Analytics or custom tracking code that reports user activity to the script author."
+        }
+    ]
+}

@@ -212,6 +212,6 @@ footer {
 /* ############### TABS ############### */
 
 /* HIDE TABS */
-input:not(:checked) ~ .tab-content {
-    display: none;
+.tabs input:not(:checked) ~ .tab-content {
+    display: none !important;
 }

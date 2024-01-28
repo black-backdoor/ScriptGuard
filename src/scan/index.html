@@ -37,8 +37,7 @@
                     <!-- CODE INPUT (TEXT)-->
                     <input type="radio" name="css-tabs" id="tab-1" class="tab-switch" checked>
                     <label for="tab-1" class="tab-label">Text</label>
-
-                    <p>TEXT</p>
+                    
                     <div class="tab-content">
                         <h3>Paste your Code</h3>
                         <textarea id="text-input" placeholder="Paste your userscript here"></textarea>
@@ -48,9 +47,8 @@
                 <div class="tab" id="file-upload">
                     <!-- CODE INPUT (FILE)-->
                     <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
-                    <label for="tab-2" class="tab-label">File</label>
+                    <label for="tab-2" class="tab-label">File Upload</label>
 
-                    <h3>File Upload</h3>
                     <div class="tab-content">
                         <h3>Select a File</h3>
                         <input type="file" id="file-input" accept=".user.js">
@@ -67,8 +65,8 @@
                         <input type="radio" name="tabs-metadata" id="tab-metadata-table" class="tab-switch" checked>
                         <label for="tab-metadata-table" class="tab-label">Meta Data Summery</label>
 
-                        <h3>Meta Tags</h3>
                         <div class="tap-content">
+                            <h3>Meta Tags</h3>
                             <table id="script-info">
                                 <thead>
                                     <tr>
@@ -106,19 +104,20 @@
                         <input type="radio" name="tabs-metadata" id="tab-metadata-raw" class="tab-switch">
                         <label for="tab-metadata-raw" class="tab-label">Code</label>
                         
-                        <h3>Meta Header</h3>
                         <div class="tap-content">
+                            <h3>Meta Header</h3>
                             <code id="metaDataBlock-code" class="language-javascript"></code>
                         </div>
-                </div>
-                <div id="updateLinks">
-                    <h4>Update Links</h4>
-                    <p>Update links are links to a website where the script will check for Updates</p>
-                    <ul id="updatelink">
-                        <li>https://example.com/script.user.js</li>
-                        <li>https://example.com/script.user.js</li>
-                    </ul>
-                    <p>Note that this list is not complete. UserScript Manager may add more links.</p>
+                    </div>
+                    <div id="updateLinks">
+                        <h4>Update Links</h4>
+                        <p>Update links are links to a website where the script will check for Updates</p>
+                        <ul id="updatelink">
+                            <li>https://example.com/script.user.js</li>
+                            <li>https://example.com/script.user.js</li>
+                        </ul>
+                        <p>Note that this list is not complete. UserScript Manager may add more links.</p>
+                    </div>
                 </div>
             </section>
             <section id="match">

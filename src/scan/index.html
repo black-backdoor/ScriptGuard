@@ -8,6 +8,10 @@
 
     <!-- STYLE -->
     <link rel="stylesheet" href="style.css" type="text/css"/>
+
+    <!-- SCRIPT -->
+    <script src="/js/scan/scanner.js"></script>
+    <script src="/js/scan/metainfo.js"></script>
 </head>
 <body>
     <header>
@@ -172,7 +176,7 @@
     </footer>
 
     <script>
-        var code = document.getElementById("meta-code-input");
+        var code = document.getElementById("metaDataBlock-code");
         code.innerText = `
 // ==UserScript==
 // @name         ScriptGuard
@@ -183,6 +187,12 @@
 // @grant        none
 // ==/UserScript==
 `;
+    </script>
+    <script>
+        const code_text = document.getElementById("text-input");
+        code_text.addEventListener("change", function() {
+            main(code_text.value);
+        });
     </script>
 </body>
 </html>

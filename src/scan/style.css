@@ -116,6 +116,7 @@ main {
     list-style: square;
 }
 
+
 /* --------------- Antifeatures --------------- */
 
 /* SINGLE ANTI FEATURE */
@@ -124,18 +125,6 @@ main {
     display: flex;
     align-items: center;
 }
-
-#antifeatures img {
-    /* set image size */
-    height: 30px;
-    width: 30px;
-}
-
-#antifeatures img {
-    /* change cursor to pointer */
-    cursor: pointer;
-}
-
 
 #antifeatures ul {
     padding-left: 0;
@@ -147,6 +136,55 @@ main {
     margin-bottom: 0;
 }
 
+
+/* --------------- PERMISSIONS --------------- */
+
+#permissions ul {
+    list-style: square;
+}
+
+#permissions li {
+    display: flex;
+    align-items: center;
+}
+
+#permissions ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* REMOVE SPACE BETWEEN LIST AND TITLE */
+#permissions h4 {
+    margin-bottom: 0;
+}
+
+/* ############### FOOTER ############### */
+
+footer {
+    border: #000;
+    border-top: 1px solid;
+    padding: 24px;
+}
+
+#footer-logo {
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--logo-color);
+}
+
+
+/* ############### DESCRIPTION ############### */
+.description-container img {
+    /* set image size */
+    height: 30px;
+    width: 30px;
+}
+
+.description-container img {
+    /* change cursor to pointer */
+    cursor: pointer;
+}
 
 .description-container {
     position: relative;
@@ -170,23 +208,6 @@ main {
 .description-container:hover .message-block {
     display: block;
 }
-
-
-/* ############### FOOTER ############### */
-
-footer {
-    border: #000;
-    border-top: 1px solid;
-    padding: 24px;
-}
-
-#footer-logo {
-    color: black;
-    font-size: 1rem;
-    text-decoration: none;
-    color: var(--logo-color);
-}
-
 
 /* ############### TABS ############### */
 

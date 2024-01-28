@@ -88,7 +88,7 @@ main {
 
 #results {
     /* CHANGE TO DISPLAY: NONE TO HIDE */
-    display: none;
+    display: block;
 }
 
 /* --------------- MetaData --------------- */
@@ -104,6 +104,72 @@ main {
 }
 
 
+#meta-code-input {
+    font-family: monospace;
+    font-size: 0.875rem;
+}
+
+
+/* --------------- UpdateLinks --------------- */
+
+#updatelink {
+    list-style: square;
+}
+
+/* --------------- Antifeatures --------------- */
+
+/* SINGLE ANTI FEATURE */
+#antifeatures li {
+    /* make image and text vertically aligned */
+    display: flex;
+    align-items: center;
+}
+
+#antifeatures img {
+    /* set image size */
+    height: 30px;
+    width: 30px;
+}
+
+#antifeatures img {
+    /* change cursor to pointer */
+    cursor: pointer;
+}
+
+
+#antifeatures ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* REMOVE SPACE BETWEEN LIST AND TITLE */
+#antifeatures h4 {
+    margin-bottom: 0;
+}
+
+
+.description-container {
+    position: relative;
+    display: inline-block;
+}
+
+.message-block {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.description-container:hover .message-block {
+    display: block;
+}
 
 
 /* ############### FOOTER ############### */

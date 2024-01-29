@@ -126,6 +126,7 @@ section > .tabbed {
     display: none;
 }
 */
+
 /* FILE BUTTON STYLING */
 /* ------ UNCOMMENT FOR CUSTOM FILE BUTTON
 #file-select {
@@ -144,6 +145,7 @@ section > .tabbed {
     color: white !important;
 }
 */
+
 /* --------------- URL INPUT --------------- */
 #url-input {
     width: 80%;
@@ -193,7 +195,7 @@ section > .tabbed {
 
 #results {
     /* CHANGE TO DISPLAY: NONE TO HIDE */
-    display: block;
+    display: none;
 }
 
 /* --------------- MetaData --------------- */
@@ -327,6 +329,7 @@ a {
 	color: #21D4FD; 
 	transition: all 0.3s;
 }
+
 a:hover {
 	color: #B721FF;
 }
@@ -350,6 +353,7 @@ a:hover {
 	padding: 0;
 	border-bottom: 1px solid #ccc;
 }
+
 .tab > label {
 	display: block;
 	margin-bottom: -1px;
@@ -364,6 +368,7 @@ a:hover {
 	cursor: pointer;	
 	transition: all 0.3s;
 }
+
 .tab:hover label {
 	border-top-color: #333;
 	color: #333;
@@ -403,6 +408,7 @@ a:hover {
     --popup-border: #000;
 }
 
+
 #popup-holder {
     display: none;
     position: fixed;
@@ -426,12 +432,14 @@ a:hover {
     overflow: scroll;
 }
 
+/* align header items */
 #code-popup header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* remove margin from title */
 #code-popup header h1 {
     margin: 0;
 }

@@ -99,8 +99,7 @@ function getURL(url) {
 
 function showResults() {
     // add loading animation
-    return;
-
+    
     const results = document.getElementById("results");
     results.style.display = "block";
 }

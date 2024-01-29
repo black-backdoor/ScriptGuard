@@ -72,9 +72,41 @@ main {
 /* ############### INPUT ############### */
 /* FILE UPLOAD or TEXT INPUT */
 
+:root {
+    --button-color: #4b5563;
+    --button-background: #e5e7eb;
+}
+
 #input {
     /* CHANGE TO DISPLAY: NONE TO HIDE */
     display: block;
+}
+
+#file-input {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#input button {
+    /* space between button and input */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    /* make button look like a button */
+    border-radius: 9999px;
+    border-width: 0px;
+    height: 2.5rem;
+    width: 5rem;
+
+    color: var(--button-color);
+    background-color: var(--button-background);
+
+    /* change cursor to pointer */
+    cursor: pointer;
+
+    /* POSITION BUTTON TO RIGHT */
+    float: right;
+    margin-right: 5%;
 }
 
 /* --------------- CODE INPUT --------------- */

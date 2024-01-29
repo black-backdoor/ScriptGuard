@@ -11,7 +11,7 @@
 
     <!-- SCRIPT -->
     <script src="/js/upload.js"></script>
-    
+
     <script src="/js/scan/scanner.js"></script>
     <script src="/js/scan/metainfo.js"></script>
     <script src="/js/scan/antifeatures.js"></script>
@@ -39,10 +39,12 @@
             <div class="tabbed">
                 <input type="radio" id="tab1" name="code-input" checked>
                 <input type="radio" id="tab2" name="code-input">
+                <input type="radio" id="tab3" name="code-input">
                 
                 <ul class="tabs">
                     <li class="tab"><label for="tab1">Code</label></li>
                     <li class="tab"><label for="tab2">File Upload</label></li>
+                    <li class="tab"><label for="tab3">URL</label></li>
                 </ul>
                 
                 <div class="tab-content">
@@ -60,18 +62,25 @@
                     <input type="file" id="file-input" accept=".user.js">
                     <button id="file-submit">Submit</button>
                 </div>
+
+                <div class="tab-content">
+                    <!-- CODE INPUT (URL) -->
+                    <h3>Enter your URL</h3>
+                    <input type="url" id="url-input" placeholder="Scan URL" pattern="https?://.+">
+                    <button id="url-submit">Submit</button>
+                </div>
             </div>
         </section>
         <section id="results">
             <section id="meta-data">
                 <!-- META DATA -->
                 <div class="tabbed">
-                    <input type="radio" id="tab3" name="css-tabs" checked>
-                    <input type="radio" id="tab4" name="css-tabs">
+                    <input type="radio" id="tab4" name="css-tabs" checked>
+                    <input type="radio" id="tab5" name="css-tabs">
                     
                     <ul class="tabs">
-                        <li class="tab"><label for="tab3">Table</label></li>
-                        <li class="tab"><label for="tab4">Block</label></li>
+                        <li class="tab"><label for="tab4">Table</label></li>
+                        <li class="tab"><label for="tab5">Block</label></li>
                     </ul>
                     
                     <div class="tab-content">
@@ -114,7 +123,6 @@
                         <h3>Meta Header</h3>
                         <code id="metaDataBlock-code" class="language-javascript"></code>
                     </div>
-    
                 </div>
                 
                 <div id="updateLinks">
@@ -177,6 +185,18 @@
             </section>
         </section>
     </main>
+
+    <div id="popup-holder">
+        <div id="code-popup">
+            <header>
+                <h1 id="code-popup-title">Code</h1>
+                <img src="/assets/icons/close.svg" alt="close" id="code-popup-close">
+            </header>
+            <main>
+                <code id="code-popup-code" class="language-javascript"></code>
+            </main>
+        </div>
+    </div>
 
     <footer>
         <a href="/" id="footer-logo">ScriptGuard</a>

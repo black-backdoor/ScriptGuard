@@ -37,6 +37,30 @@ document.addEventListener('DOMContentLoaded', function () {
         
     });
 
+    // if the user uploaded a file show the code when pressed on the button
+    document.getElementById('file-input').addEventListener("change", function () {
+        const fileInput = document.getElementById('file-input');
+        const file = fileInput.files[0];
+
+        // check if file is selected
+        if (file) {
+            // convert file to text
+            const reader = new FileReader();
+
+            reader.onload = function (event) {
+                const fileContent = event.target.result;
+
+                document.getElementById('file-show').addEventListener("click", function () {
+                    showCodePopup("File Code", fileContent);
+                });
+            };
+
+            reader.readAsText(file);
+        } else {
+            alert('Please select a file.');
+        }
+    });
+
     /* NOT WORKING BECAUSE OF CORS
     // get the url from the input and get the code
     document.getElementById('url-show').addEventListener('click', function () {

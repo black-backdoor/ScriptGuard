@@ -152,6 +152,13 @@ section > .tabbed {
     margin-left: 5px;
 }
 
+/* DISABLE SINCE NOT WORKING (CORS) */
+#url-input, 
+#url-buttons {
+    user-select: none;
+    pointer-events: none;
+}
+
 
 /* --------------- BUTTONS --------------- */
 #file-buttons,
@@ -416,6 +423,7 @@ a:hover {
     border: 1px solid var(--popup-border);
     background-color: var(--popup-background);
     padding: 1rem;
+    overflow: scroll;
 }
 
 #code-popup header {

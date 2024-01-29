@@ -30,90 +30,91 @@
     </header>
 
     <main>
+        
         <section id="input">
             <!-- CODE INPUT -->
             <h1>Scan your userscript</h1>
-            <section class="tabs">
-                <div class="tab" id="text">
-                    <!-- CODE INPUT (TEXT)-->
-                    <input type="radio" name="css-tabs" id="tab-1" class="tab-switch" checked>
-                    <label for="tab-1" class="tab-label">Text</label>
-                    
-                    <div class="tab-content">
-                        <h3>Paste your Code</h3>
-                        <textarea id="text-input" placeholder="Paste your userscript here"></textarea>
-                        <button id="text-submit">Submit</button>
-                    </div>
+            <div class="tabbed">
+                <input type="radio" id="tab1" name="code-input" checked>
+                <input type="radio" id="tab2" name="code-input">
+                
+                <ul class="tabs">
+                    <li class="tab"><label for="tab1">Code</label></li>
+                    <li class="tab"><label for="tab2">File Upload</label></li>
+                </ul>
+                
+                <div class="tab-content">
+                    <!-- CODE INPUT (TEXT) -->
+                    <h3>Paste your Code</h3>
+                    <textarea id="text-input" placeholder="Paste your userscript here"></textarea>
+                    <button id="text-submit">Submit</button>
                 </div>
-                <div class="tab" id="file-upload">
-                    <!-- CODE INPUT (FILE)-->
-                    <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
-                    <label for="tab-2" class="tab-label">File Upload</label>
 
-                    <div class="tab-content">
-                        <h3>Select a File</h3>
-                        <p>Only .user.js files are allowed.</p>
-                        
-                        <input type="file" id="file-input" accept=".user.js">
-                        <button id="file-submit">Submit</button>
-                    </div>
+                <div class="tab-content">
+                    <!-- CODE INPUT (FILE)-->
+                    <h3>Select a File</h3>
+                    <p>Only .user.js files are allowed.</p>
+                    
+                    <input type="file" id="file-input" accept=".user.js">
+                    <button id="file-submit">Submit</button>
                 </div>
-            </section>
+            </div>
         </section>
         <section id="results">
             <section id="meta-data">
                 <!-- META DATA -->
-                <div class="tabs">
-                    <div class="tab" id="meta-table">
+                <div class="tabbed">
+                    <input type="radio" id="tab3" name="css-tabs" checked>
+                    <input type="radio" id="tab4" name="css-tabs">
+                    
+                    <ul class="tabs">
+                        <li class="tab"><label for="tab3">Table</label></li>
+                        <li class="tab"><label for="tab4">Block</label></li>
+                    </ul>
+                    
+                    <div class="tab-content">
                         <!-- META DATA (TABLE)-->
-                        <input type="radio" name="tabs-metadata" id="tab-metadata-table" class="tab-switch" checked>
-                        <label for="tab-metadata-table" class="tab-label">Meta Data Summery</label>
-
-                        <div class="tab-content">
-                            <h3>Meta Tags</h3>
-                            <table id="script-info">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Value</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Name</td>
-                                        <td id="script-name">ScriptGuard</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Version</td>
-                                        <td id="script-version">0.1.0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Description</td>
-                                        <td id="script-description">ScriptGuard is a tool to scan userscripts for malicious code.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Author</td>
-                                        <td id="script-author">black-backdoor</td>
-                                    </tr>
-                                    <tr>
-                                        <td>UpdateURL</td>
-                                        <td id="script-updateURL">https://github.com/black-backdoor/ScriptGuard</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <h3>Meta Tags</h3>
+                        <table id="script-info">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Name</td>
+                                    <td id="script-name">ScriptGuard</td>
+                                </tr>
+                                <tr>
+                                    <td>Version</td>
+                                    <td id="script-version">0.1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td id="script-description">ScriptGuard is a tool to scan userscripts for malicious code.</td>
+                                </tr>
+                                <tr>
+                                    <td>Author</td>
+                                    <td id="script-author">black-backdoor</td>
+                                </tr>
+                                <tr>
+                                    <td>UpdateURL</td>
+                                    <td id="script-updateURL">https://github.com/black-backdoor/ScriptGuard</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="tab" id="meta-code">
+    
+                    <div class="tab-content">
                         <!-- META DATA (CODE) -->
-                        <input type="radio" name="tabs-metadata" id="tab-metadata-raw" class="tab-switch">
-                        <label for="tab-metadata-raw" class="tab-label">Code</label>
-                        
-                        <div class="tab-content">
-                            <h3>Meta Header</h3>
-                            <code id="metaDataBlock-code" class="language-javascript"></code>
-                        </div>
+                        <h3>Meta Header</h3>
+                        <code id="metaDataBlock-code" class="language-javascript"></code>
                     </div>
+    
                 </div>
+                
                 <div id="updateLinks">
                     <h4>Update Links</h4>
                     <p>Update links are links to a website where the script will check for Updates</p>

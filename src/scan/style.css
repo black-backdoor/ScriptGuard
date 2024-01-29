@@ -83,26 +83,23 @@ main {
 }
 
 
-#input button {
-    /* space between button and input */
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    
+#input button {  
     /* make button look like a button */
     border-radius: 9999px;
     border-width: 0px;
     height: 2.5rem;
     width: 5rem;
 
-    color: var(--button-color);
-    background-color: var(--button-background);
-
     /* change cursor to pointer */
     cursor: pointer;
 
+    color: var(--button-color);
+    background-color: var(--button-background);
+
     /* POSITION BUTTON TO RIGHT */
-    float: right;
+    /* float: right; */
     margin-right: 5%;
+    margin-left: 5px;
 }
 
 /* --------------- CODE INPUT --------------- */
@@ -130,6 +127,14 @@ section > .tabbed {
     margin-bottom: 1rem;
     height: 1.5rem;
     margin-left: 5px;
+}
+
+/* --------------- SHOW BUTTON --------------- */
+#file-show,
+#url-show {
+    background-color: transparent !important;
+    height: 2.5rem !important;
+    width: 2.5rem !important;
 }
 
 /* ############### RESULTS ############### */
@@ -340,6 +345,12 @@ a:hover {
 
 
 /* ############### POPUP ############### */
+:root {
+    --popup-out-background: rgba(0, 0, 0, 0.2);
+    --popup-background: #fff;
+    --popup-border: #000;
+}
+
 #popup-holder {
     display: none;
     position: fixed;
@@ -347,7 +358,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--popup-out-background);
 
     /* display: flex; */
     align-items: center;
@@ -357,7 +368,8 @@ a:hover {
 #code-popup {
     width: 80%;
     height: 80%;
-    background-color: rebeccapurple;
+    border: 1px solid var(--popup-border);
+    background-color: var(--popup-background);
     padding: 1rem;
 }
 

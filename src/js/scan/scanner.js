@@ -30,6 +30,10 @@ function main(code) {
 
     console.log(`%c[SCAN] %cfinished displaying antifeatures`, 'color: blue', 'color: inherit');
 
+    findDocumentCookies(code);
+
+    console.log(`%c[SCAN] %cfinished scanning for cookie graber`, 'color: blue', 'color: inherit');
+
     showResults();
 }
 

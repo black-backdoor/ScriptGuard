@@ -246,6 +246,12 @@ section > .tabbed {
     display: none;
 }
 
+/* MAKE TABLE SCROLLABLE */
+.tab-content:has(#script-info) {
+    /* get the tab element that is contains the script-info table */
+    overflow: scroll;
+}
+
 /* MAKE FIRST COLUMN BOLD */
 #script-info tbody td:first-child {
     font-weight: bold;
@@ -261,6 +267,7 @@ section > .tabbed {
 
 #updatelink {
     list-style: square;
+    overflow: scroll;
 }
 
 

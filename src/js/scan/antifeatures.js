@@ -1,11 +1,11 @@
 function displayAntifeatures(antifeatures) {
     if (antifeatures == undefined || antifeatures == null) {
-        console.log("EXIT [Antifeatures] Antifeatures is undefined or null");
+        console.log("EXIT [displayAntifeatures] Antifeatures is undefined or null");
         return;
     }
     
     if (antifeatures.length == 0) {
-        console.log("EXIT [Antifeatures] No antifeatures found");
+        console.log("EXIT [displayAntifeatures] No antifeatures found");
         return;
     }
 

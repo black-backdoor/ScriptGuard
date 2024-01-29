@@ -120,6 +120,44 @@ section > .tabbed {
     margin-bottom: 1rem;
 }
 
+/* ------- DRAG & DROP MENU ------- */
+:root {
+    --drag-background: rgba(0, 0, 0, 0.2);
+    --drag-menu-background: rgb(255, 255, 255);
+}
+
+/* STYLE FILE INPUT */
+#drop-zone {
+    cursor: pointer;
+    text-align: center;
+    
+    border: 2px dashed #333;
+    padding: 20px;
+
+    /* SET BACKGROUND AND SIZE */
+    background-color: var(--drag-menu-background);
+    height: 40%;
+    width: 20%;
+}
+
+/* STYLE BACKGROUND */
+#drop-file {
+    display: none;
+    background-color: var(--drag-background);
+
+    /* SET POSITION */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* SET DRAG & DROP MENU TO CENTER */
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* UNCOMMENT TO HIDE FILE INPUT
 #file-input {

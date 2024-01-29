@@ -108,6 +108,7 @@ main {
 /* --------------- CODE INPUT --------------- */
 #text-input {
     width: 95%;
+    min-height: 5rem;
     height: 10rem;
     margin-left: 5px;
     resize: vertical;

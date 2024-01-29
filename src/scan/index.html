@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style.css" type="text/css"/>
 
     <!-- SCRIPT -->
+    <script src="/js/upload.js"></script>
+    
     <script src="/js/scan/scanner.js"></script>
     <script src="/js/scan/metainfo.js"></script>
     <script src="/js/scan/antifeatures.js"></script>
@@ -192,12 +194,6 @@
 // @grant        none
 // ==/UserScript==
 `;
-    </script>
-    <script>
-        const code_text = document.getElementById("text-input");
-        code_text.addEventListener("change", function() {
-            main(code_text.value);
-        });
     </script>
 </body>
 </html>

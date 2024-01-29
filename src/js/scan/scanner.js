@@ -57,9 +57,11 @@ function displayUpdateLinks(metaObject) {
     links.innerHTML = "";
 
 
-    var updateURLs = metaObject.updateURL;
-    var downloadURLs = metaObject.downloadURL;
+    var updateURLs = metaObject?.updateURL || [];
+    var downloadURLs = metaObject?.downloadURL || [];
     var URLS =  updateURLs.concat(downloadURLs);
+
+    console.log("URLS", URLS);
 
     URLS.forEach(URL => {
         // create element

@@ -82,10 +82,6 @@ main {
     display: block;
 }
 
-#file-input {
-    width: 100%;
-    margin-bottom: 1rem;
-}
 
 #input button {
     /* space between button and input */
@@ -110,19 +106,21 @@ main {
 }
 
 /* --------------- CODE INPUT --------------- */
-#input #text textarea {
-    width: 100%;
-    height: 10rem;
-}
-
 #text-input {
     width: 95%;
     height: 10rem;
     margin-left: 5px;
+    resize: vertical;
 }
 
 section > .tabbed {
     min-height: 320px;
+}
+
+/* --------------- FILE INPUT --------------- */
+#file-input {
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 /* ############### RESULTS ############### */

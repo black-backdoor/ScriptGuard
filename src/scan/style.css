@@ -82,6 +82,9 @@ main {
     display: block;
 }
 
+#input textarea {
+    margin-bottom: 1rem;
+}
 
 #input button {  
     /* make button look like a button */
@@ -95,13 +98,6 @@ main {
 
     color: var(--button-color);
     background-color: var(--button-background);
-}
-
-#file-buttons,
-#url-buttons {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
 }
 
 /* --------------- CODE INPUT --------------- */
@@ -118,10 +114,20 @@ section > .tabbed {
 }
 
 /* --------------- FILE INPUT --------------- */
+
+
+#file-input {
+    margin-bottom: 1rem;
+}
+
+
+/* UNCOMMENT TO HIDE FILE INPUT
 #file-input {
     display: none;
 }
-
+*/
+/* FILE BUTTON STYLING */
+/* ------ UNCOMMENT FOR CUSTOM FILE BUTTON
 #file-select {
     margin-bottom: 1rem;
     height: 2.2rem !important;
@@ -137,13 +143,22 @@ section > .tabbed {
     background-color: #0b4dda !important;
     color: white !important;
 }
-
+*/
 /* --------------- URL INPUT --------------- */
 #url-input {
     width: 80%;
     margin-bottom: 1rem;
     height: 1.5rem;
     margin-left: 5px;
+}
+
+
+/* --------------- BUTTONS --------------- */
+#file-buttons,
+#url-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 #url-buttons button,

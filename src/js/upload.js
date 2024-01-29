@@ -36,6 +36,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         
     });
+
+    /* NOT WORKING BECAUSE OF CORS
+    // get the url from the input and get the code
+    document.getElementById('url-show').addEventListener('click', function () {
+        getURL(document.getElementById('url-input').value);
+    });
+    */
 });
 
 function hideUploadForm() {
@@ -49,6 +56,22 @@ function hideUploadForm() {
     }
 }
 
+/* NOT WORKING BECAUSE OF CORS
+function getURL(url) {
+    fetch(url)
+    .then(response => response.text())
+    .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const textContent = doc.body.textContent;
+
+        // Display the text content
+        var code = textContent;
+        console.log(code);
+    })
+    .catch(error => console.error('Error fetching website:', error));
+}
+*/
 
 function showResults() {
     // add loading animation
@@ -57,3 +80,5 @@ function showResults() {
     const results = document.getElementById("results");
     results.style.display = "block";
 }
+
+

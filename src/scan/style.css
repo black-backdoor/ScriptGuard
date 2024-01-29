@@ -95,11 +95,13 @@ main {
 
     color: var(--button-color);
     background-color: var(--button-background);
+}
 
-    /* POSITION BUTTON TO RIGHT */
-    /* float: right; */
-    margin-right: 5%;
-    margin-left: 5px;
+#file-buttons,
+#url-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 /* --------------- CODE INPUT --------------- */
@@ -117,8 +119,23 @@ section > .tabbed {
 
 /* --------------- FILE INPUT --------------- */
 #file-input {
-    width: 100%;
+    display: none;
+}
+
+#file-select {
     margin-bottom: 1rem;
+    height: 2.2rem !important;
+    width: 7rem !important;
+    border-radius: 0.5rem !important;
+    border: 1px solid #0b4dda !important;
+    color: #0b4dda !important;
+    background-color: white !important;
+    transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+#file-select:hover {
+    background-color: #0b4dda !important;
+    color: white !important;
 }
 
 /* --------------- URL INPUT --------------- */
@@ -129,12 +146,25 @@ section > .tabbed {
     margin-left: 5px;
 }
 
+#url-buttons button,
+#file-buttons button {
+    margin: 0 0.4rem;
+}
+
 /* --------------- SHOW BUTTON --------------- */
 #file-show,
 #url-show {
-    background-color: transparent !important;
     height: 2.5rem !important;
     width: 2.5rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#url-show img,
+#file-show img {
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 /* ############### RESULTS ############### */

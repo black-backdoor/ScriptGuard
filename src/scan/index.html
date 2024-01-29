@@ -60,18 +60,25 @@
                     <h3>Select a File</h3>
                     <p>Only .user.js files are allowed.</p>
                     
-                    <input type="file" id="file-input" accept=".user.js">
-                    <button id="file-show" title="show code"><img src="/assets/icons/show.svg"></button>
-                    <button id="file-submit">Submit</button>
+                    <div id="file-selector">
+                        <input type="file" id="file-input" accept=".user.js">
+                        <button id="file-select">Select File</button>
+                    </div>
+                    
+                    <div id="file-buttons">
+                        <button id="file-show" title="show code"><img src="/assets/icons/code.svg"></button>
+                        <button id="file-submit">Submit</button>
+                    </div>
                 </div>
 
                 <div class="tab-content">
                     <!-- CODE INPUT (URL) -->
                     <h3>Enter your URL</h3>
                     <input type="url" id="url-input" placeholder="Scan URL" pattern="https?://.+">
-                    <button id="url-scan">Scan</button>
-                    <button id="url-show" title="show code"><img src="/assets/icons/show.svg"></button>
-                    <button id="url-submit">Submit</button>
+                    <div id="url-buttons">
+                        <button id="url-show" title="show code"><img src="/assets/icons/code.svg"></button>
+                        <button id="url-submit">Submit</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -187,6 +194,7 @@
                     </li>
                 </ul>
             </section>
+            <section id="@requires"></section>
         </section>
     </main>
 
@@ -222,7 +230,7 @@
 `;
     </script>
     <script>
-        showCodePopup("HI", "console.log('hi');");
+        // showCodePopup("HI", "console.log('hi');");
     </script>
 </body>
 </html>

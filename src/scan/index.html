@@ -11,6 +11,7 @@
 
     <!-- SCRIPT -->
     <script src="/js/upload.js"></script>
+    <script src="/js/code-popup.js"></script>
 
     <script src="/js/scan/scanner.js"></script>
     <script src="/js/scan/metainfo.js"></script>
@@ -190,7 +191,9 @@
         <div id="code-popup">
             <header>
                 <h1 id="code-popup-title">Code</h1>
-                <img src="/assets/icons/close.svg" alt="close" id="code-popup-close">
+                <button onclick="hideCodePopup();">
+                    <img src="/assets/icons/close.svg" alt="close" id="code-popup-close">
+                </button>
             </header>
             <main>
                 <code id="code-popup-code" class="language-javascript"></code>
@@ -214,6 +217,9 @@
 // @grant        none
 // ==/UserScript==
 `;
+    </script>
+    <script>
+        showCodePopup("HI", "console.log('hi');");
     </script>
 </body>
 </html>

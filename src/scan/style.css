@@ -371,9 +371,21 @@ a:hover {
     margin: 0;
 }
 
+#code-popup header button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
 #code-popup header img {
     width: 30px;
     height: 30px;
+}
+
+#code-popup main {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
 }
 
 #code-popup main code {

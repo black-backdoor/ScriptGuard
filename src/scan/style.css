@@ -80,6 +80,9 @@ main {
 #input {
     /* CHANGE TO DISPLAY: NONE TO HIDE */
     display: block;
+
+    /* give min-height to prevent the footer from jumping up */
+    min-height: 79vh;
 }
 
 #input textarea {

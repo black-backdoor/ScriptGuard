@@ -60,7 +60,99 @@ header nav a:hover {
 
 
 
+/* ############### TITLE ############### */
 
+:root {
+    --title-text-color: #333333;
+    --subtitle-text-color: #4b5563;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    min-width: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#head {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+
+/* TITLE */
+#head h1 {
+    color: var(--title-text-color);
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* SUBTITLE */
+#head h3 {
+    color: var(--subtitle-text-color);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* REMOVE LATER */
+#head img {
+    width: 10%;
+}
+
+
+
+/* ############### CAN CANNOT ############### */
+#can-cannot {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* TITLE */
+#can-cannot h1 {
+    font-size: 1.6rem;
+}
+
+/* PARTS */
+#can-cannot section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* SUBTITLE */
+#can-cannot h3 {
+    font-size: 1.2rem;
+}
+
+
+/* --------------- LIST --------------- */
+
+/* LIST HIDE BULLET */
+#can-do ul,
+#cannot-do ul {
+    list-style: none !important;
+}
+
+
+/* LIST SHOW CHECKMARK */
+#can-do li:before {
+    content:"\2714\0020" !important;
+}
+
+/* LIST SHOW CROSS */
+#cannot-do li:before {
+    content: "\2716\0020" !important;
+}
+
+
+
+/* LIST ELEMENT */
+#can-cannot li {
+    margin-bottom: 0.5rem;
+}
 
 
 /* ############### FOOTER ############### */

@@ -10,5 +10,3 @@
 - [ ] Match
 - [ ] Antifeatures
 - [ ] Grant
-
-https://codepen.io/MPDoctor/pen/mpJdYe

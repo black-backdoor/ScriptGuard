@@ -31,9 +31,24 @@ const assets = [
   "/js/pwa/registerPWAWorker.js",
 ]
 
+// A function to fetch and cache individual assets
+function fetchAndCacheAsset(cache, url) {
+  return fetch(url)
+      .then(response => {
+          if (!response.ok) {
+              throw new Error(`Failed to fetch: ${url}`);
+          }
+          return cache.put(url, response);
+      })
+      .catch(error => {
+          console.warn(`Error fetching ${url}:`, error);
+      });
+}
+
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
     caches.open(staticScriptGuard).then(cache => {
+      const fetchPromises = assets.map(url => fetchAndCacheAsset(cache, url))
       cache.addAll(assets);
     })
   );

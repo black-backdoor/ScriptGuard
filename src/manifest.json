@@ -3,13 +3,24 @@
     "short_name": "ScriptGuard",
     "start_url": "index.html",
     "display": "standalone",
-    "background_color": "#fdfdfd",
-    "theme_color": "#db4938",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
     "orientation": "portrait-primary",
     "icons": [
-      {
-        "src": "/assets/favicon.svg",
-        "type": "image/png", "sizes": "192x192"
-      }
+        {
+            "src": "/assets/favicon.svg",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "/assets/favicon.svg",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "/assets/favicon.svg",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
     ]
-  }
+}

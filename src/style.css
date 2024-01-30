@@ -175,6 +175,21 @@ main {
     }
 }
 
+/* ############### GET STARTED ############### */
+#getting-started {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* LIST */
+#getting-started ol {
+    list-style: decimal;
+}
+
+/* LIST ELEMENT */
+#getting-started li {
+    margin-bottom: 0.5rem;
+}
 
 /* ############### CONTRIBUTION ############### */
 

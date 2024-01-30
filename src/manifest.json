@@ -1,0 +1,15 @@
+{
+    "name": "ScriptGuard - Userscript Antivirus",
+    "short_name": "ScriptGuard",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#fdfdfd",
+    "theme_color": "#db4938",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/assets/favicon.svg",
+        "type": "image/png", "sizes": "192x192"
+      }
+    ]
+  }

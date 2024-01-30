@@ -204,6 +204,8 @@ section > .tabbed {
 
 
 /* --------------- BUTTONS --------------- */
+
+/* ALIGN BUTTONS */
 #file-buttons,
 #url-buttons {
     display: flex;
@@ -211,12 +213,15 @@ section > .tabbed {
     margin-bottom: 1rem;
 }
 
+/* STYLE BUTTONS */
 #url-buttons button,
 #file-buttons button {
     margin: 0 0.4rem;
 }
 
 /* --------------- SHOW BUTTON --------------- */
+
+/* ALIGN ITEMS IN BUTTON */
 #file-show,
 #url-show {
     height: 2.5rem !important;
@@ -226,6 +231,7 @@ section > .tabbed {
     justify-content: center;
 }
 
+/* SET IMAGE SIZE (CODE BUTTON) */
 #url-show img,
 #file-show img {
     height: 1.5rem;
@@ -329,6 +335,8 @@ footer {
 
 
 /* ############### DESCRIPTION ############### */
+
+/* GIVE INFO ICONS A SMALLER SIZE */
 .description-container img {
     /* set image size */
     height: 30px;
@@ -347,16 +355,21 @@ footer {
 
 .message-block {
     display: none;
+
+    /* set position */
     position: absolute;
     bottom: 100%;
     left: 50%;
+
+    width: 300px;
     transform: translateX(-50%);
-    background-color: #f9f9f9;
+    
+    /* STYLE MESSAGE BLOCK */
     padding: 10px;
     border: 1px solid #ccc;
+    background-color: #f9f9f9;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 300px;
 }
 
 .description-container:hover .message-block {
@@ -492,23 +505,27 @@ a:hover {
     margin: 0;
 }
 
+/* CLOSE BUTTON */
 #code-popup header button {
     cursor: pointer;
     border: none;
     background-color: transparent;
 }
 
+/* SET IMAGE SIZE (X) BUTTON ICON */
 #code-popup header img {
     width: 30px;
     height: 30px;
 }
 
+/* REMOVE STYLES FROM GLOBAL MAIN */
 #code-popup main {
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin: 0 !important;
 }
 
+/* CODE OBJECT */
 #code-popup main code {
     font-family: monospace;
     font-size: 0.875rem;

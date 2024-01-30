@@ -7,7 +7,6 @@
 ## ToDo
 - [x] PWA
 - [x] drag-and-drop files
-- [ ] cleanup CSS
 - [ ] Match
 - [ ] Antifeatures
 - [ ] Grant

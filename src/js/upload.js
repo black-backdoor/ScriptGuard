@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // handle code that was entered via drag and drop
 document.addEventListener("DOMContentLoaded", function () {
-    var overlayMenu = document.getElementById('drop-file');
+    const overlayMenu = document.getElementById('drop-file');
 
     // display the (drop file here) menu on dragover
     window.addEventListener('dragover', function (e) {
@@ -126,7 +126,7 @@ function getURL(url) {
         const textContent = doc.body.textContent;
 
         // Display the text content
-        var code = textContent;
+        const code = textContent;
         console.log(code);
     })
     .catch(error => console.error('Error fetching website:', error));

@@ -1,4 +1,9 @@
 function findDocumentCookies(code) {
+    /*
+        searches for "document.cookie" in the code
+        if found, it will display a warning
+    */
+
     if(typeof code !== "string") {
         throw Error ("Code is not a String", typeof code);
     }
@@ -24,6 +29,12 @@ function findDocumentCookies(code) {
 
 
 function findCookies(code) {
+    /*
+        searches for ".cookie" in the code
+        if found, it will display a warning
+
+    */
+
     if(typeof code !== "string") {
         throw Error ("Code is not a String", typeof code);
     }
@@ -67,26 +78,7 @@ var s=i.split("=")[1].split(";")[0];
 */
 
 
-// detect if a varible gets document assigned
-function monitorDocumentAssignments(code) {
-    // Split the code into lines
-    const lines = code.split('\n');
 
-    var findings = [];
-
-    // Iterate through each line
-    for (let i = 0; i < lines.length; i++) {
-        const line = lines[i].trim();
-
-        // Check if the line sets a variable equal to document
-        if (line.includes('=') && line.includes('document')) {
-            console.log(`Variable assigned to document found at line ${i + 1}: ${line}`);
-            findings.push(line);
-        }
-    }
-
-    return findings;
-}
 
 
 function monitorVariableAssignments(code, variableName) {
@@ -109,7 +101,6 @@ function monitorVariableAssignments(code, variableName) {
     return findings;
 }
 
-
 // gets the variable name of a variable that gets document assigned
 function extractVariableName(inputString) {
     // Regular expression to match variable declarations like "const/let/var <variableName> = document;"
@@ -127,34 +118,4 @@ function extractVariableName(inputString) {
 }
 
 
-// searches if {variableName}.cookies is in the text
-function scanTextForCookiesWarning(text, variableName) {
-    // Create a dynamic regular expression using the provided variable name
-    const regex = new RegExp(`${variableName}\\.cookie`, 'g');
-
-    // Check for matches
-    const matches = text.match(regex);
-
-    // Display warning if matches are found
-    if (matches && matches.length > 0) {
-        console.warn(`Warning: Found instances of {${variableName}}.cookies in the text.`, matches);
-        return matches;
-    } else {
-        console.log(`No instances of ${variableName}.cookie found in the text.`);
-        return null
-    }
-}
-
-/* SCAN CODE */
-/*
-
-var assigned = monitorDocumentAssignments(code);
-assigned.forEach((line) => {
-    var name = extractVariableName(line);
-    if (name) {
-        scanTextForCookiesWarning(code, name);
-    }
-});
-
-*/
 

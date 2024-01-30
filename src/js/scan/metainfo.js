@@ -28,7 +28,7 @@ function parseMetaDataBlock(metaString) {
 
     var metaArray = metaString.split('\n');
     metaArray.forEach(function (m) {
-        var parts = m.match(/@([\w-]+)\s+(.+)/);
+        const parts = m.match(/@([\w-]+)\s+(.+)/);
         if (parts) {
             meta[parts[1]] = meta[parts[1]] || [];
             meta[parts[1]].push(parts[2]);
@@ -76,8 +76,8 @@ function displayUpdateLinks(metaObject) {
     links.innerHTML = "";
 
 
-    var updateURLs = metaObject?.updateURL || [];
-    var downloadURLs = metaObject?.downloadURL || [];
+    const updateURLs = metaObject?.updateURL || [];
+    const downloadURLs = metaObject?.downloadURL || [];
     var URLS =  updateURLs.concat(downloadURLs);
 
     // remove duplicates
@@ -87,7 +87,7 @@ function displayUpdateLinks(metaObject) {
 
     URLS.forEach(URL => {
         // create element
-        var newItem = document.createElement("li");
+        let newItem = document.createElement("li");
 
         // set elment content
         newItem.textContent = URL;

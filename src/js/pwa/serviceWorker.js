@@ -1,12 +1,18 @@
 const staticScriptGuard = "ScriptGuard-v1"
 const assets = [
     // --- Webpages ---
+    // home
     "/",
     "/index.html",
     "/style.css",
+    // scan
     "/scan/",
     "/scan/index.html",
     "/scan/style.css",
+    // features
+    "/features/",
+    "/features/index.html",
+    "/features/style.css",
     // --- JavaScript ---
     "/js/code-popup.js",
     "/js/upload.js",

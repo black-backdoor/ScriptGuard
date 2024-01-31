@@ -1,7 +1,7 @@
 function showCodePopup(title, code) {
-    var popupElement = document.getElementById("popup-holder");
-    var codeElement = document.getElementById("code-popup-code");
-    var titleElement = document.getElementById("code-popup-title");
+    const popupElement = document.getElementById("popup-holder");
+    const codeElement = document.getElementById("code-popup-code");
+    const titleElement = document.getElementById("code-popup-title");
 
     popupElement.style.display = "flex";
     titleElement.innerText = title;
@@ -18,7 +18,7 @@ function hideCodePopup() {
 
 document.addEventListener('DOMContentLoaded', function () {
     /* CLOSE POPUP ON CLICK OUTSIDE */
-    var popupHolder = document.getElementById("popup-holder");
+    const popupHolder = document.getElementById("popup-holder");
     const popupElement = document.getElementById('code-popup');
 
     popupHolder.addEventListener('click', closePopupOnClickOutside);

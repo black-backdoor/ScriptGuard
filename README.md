@@ -5,8 +5,7 @@
 
 
 ## ToDo
-- [x] PWA
-- [x] drag-and-drop files
 - [ ] Match
 - [ ] Antifeatures
 - [ ] Grant
+- [ ] Display Warings / Results in the UI

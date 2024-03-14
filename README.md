@@ -12,14 +12,9 @@
  </strong>
 </p>
 
-# Features
+## Features
 - **Antivirus** - Protects you from malicious userscripts.
 - **Static Code Analysis** - Scans the code for known vulnerabilities.
-
-
-# ScriptGuard
- a userscript antivirus
-
 
 ## ToDo
 - [ ] Match

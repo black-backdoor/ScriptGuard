@@ -30,6 +30,7 @@
 ## Future
 The goal of this project is to create a website where users can upload their userscripts and have them scanned for malicious code, as well as displaying the scripts permissions and other metadata.
 
-The current [Website](https://scriptguard.lima.zone/) is a proof of concept and only scans for a few basic patterns. 
+The current [Website](https://scriptguard.lima.zone/) is a proof of concept and only scans for a few basic patterns. *Make sure to open the console to see the results of the scan.*
 
 
+![Wireframe](assets/wireframe.svg)

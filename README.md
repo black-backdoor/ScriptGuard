@@ -12,7 +12,7 @@
 
 <p align="center">
     <strong>
-        <a href="https://scriptguard.lima.zone/" target="_blank">Website (Prof of Concept)</a>
+        <a href="https://scriptguard.lima.zone/" target="_blank">Website (Proof of Concept)</a>
         •
         <a href="https://github.com/black-backdoor/ScriptGuard">GitHub</a>
     </strong>
